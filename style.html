@@ -17,10 +17,12 @@
                 $('#toggle').toggleClass('zielona');
             });
             $('tr:even').addClass('zielona');
+            $('ol li.a:not(:has(a.b))').addClass('niebieska');
         });
     </script>
     <style>
         .zielona{background: Pink;}
+        .niebieska{background: Red;}
     </style>
 </head>
 <body>
@@ -32,6 +34,13 @@
         <tr><td>Piąty</td></tr>
         <tr><td>Szósty</td></tr>
     </table>
+	<ol>
+		<li class="a"><a href="#" class="b">Jeden</a></li>
+		<li>Dwa</li>
+		<li>Trzy</li>
+		<li class="a"><a href="#">Cztery</a></li>
+		<li>Pięć</li>
+	</ol>
     <div>
         <button>Zielony</button><button>mosteczek</button><span id="classic">
             Zmiana
